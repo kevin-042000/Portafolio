@@ -1,11 +1,14 @@
+$shadow-color: #6e6e6e;
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 body{
-    background-color: cadetblue;
-  
+    
+    background-image: url(../img/fondo_principal.jpg);
+    
 }
 
 .container {
@@ -14,11 +17,14 @@ body{
 }
 
 
+
+
+
 .contenedor-perfil  {
     margin-top: 3rem;
     min-height: 100vh;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    background-color: antiquewhite;
+    box-shadow: 0 0 10px rgb(65, 64, 64);
+    // background-color: gray;
   
     .fondo {
       background-image: url(../img/fondo.png);
@@ -42,7 +48,23 @@ body{
     }
   
   }
+
+.contenedor-proyectos{
+  min-height: 100vh;
+  margin-top: 3rem;
+
+  .card {
+    box-shadow: 0 0 10px $shadow-color;
+  }
+}
+
+
+
+
+
   
+
+
   
   
 
@@ -50,7 +72,8 @@ footer {
     background-color: black;
     margin-top: 3rem;
     margin-bottom: 0;
-    padding: 1rem;
+    padding-top: 0.7rem;
+    padding-bottom: 0.1rem;
 
     .seccion-contacto{
     ul {
