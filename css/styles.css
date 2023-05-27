@@ -60,4 +60,54 @@ footer {
     footer .seccion-contacto ul a:hover i {
       color: #00FF7F; }
 
+@media screen and (max-width: 767px) {
+  .datos-personales .card,
+  .estudios .card,
+  .conocimientos .card,
+  .habilidades .card,
+  .experiencia .card {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 20px; }
+  .datos-personales .card-body ul li,
+  .estudios .card-body ul li,
+  .conocimientos .card-body ul li,
+  .habilidades .card-body ul li,
+  .experiencia .card-body ul li {
+    font-size: 14px; }
+  .datos-personales .card-header h4,
+  .estudios .card-header h4,
+  .conocimientos .card-header h4,
+  .habilidades .card-header h4,
+  .experiencia .card-header h4 {
+    font-size: 18px; } }
+
+@media screen and (max-width: 767px) {
+  .section-proyectos {
+    display: flex;
+    justify-content: center; }
+    .section-proyectos .contenedor-proyectos {
+      max-width: 90%; }
+      .section-proyectos .contenedor-proyectos .row {
+        flex-direction: column; }
+        .section-proyectos .contenedor-proyectos .row .card {
+          width: 80%;
+          margin: 0 auto;
+          margin-bottom: 20px; }
+        .section-proyectos .contenedor-proyectos .row .card-body ul li {
+          font-size: 14px; }
+        .section-proyectos .contenedor-proyectos .row .card-header h4 {
+          font-size: 18px; } }
+@media screen and (max-width: 991px) {
+  .section-proyectos .contenedor-proyectos .pro {
+    flex-wrap: wrap; }
+  .section-proyectos .contenedor-proyectos .col-sm-4 {
+    width: 100%;
+    margin-bottom: 20px; }
+  @supports (display: grid) {
+    .section-proyectos .contenedor-proyectos .pro {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px; } } }
+
 /*# sourceMappingURL=styles.css.map */

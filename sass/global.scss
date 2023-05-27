@@ -17,9 +17,6 @@ body{
 }
 
 
-
-
-
 .contenedor-perfil  {
     margin-top: 3rem;
     min-height: 100vh;
@@ -58,16 +55,6 @@ body{
   }
 }
 
-
-
-
-
-  
-
-
-  
-  
-
 footer {
     background-color: black;
     margin-top: 3rem;
@@ -104,3 +91,85 @@ footer {
         }
     }
 }
+
+// estilos responsive
+
+.datos-personales,
+.estudios,
+.conocimientos,
+.habilidades,
+.experiencia {
+
+
+  @media screen and (max-width: 767px) {
+    .card {
+      width: 80%;  
+      margin: 0 auto;  
+      margin-bottom: 20px;  
+    }
+  
+    .card-body ul li {
+      font-size: 14px;  
+    }
+  
+    .card-header h4 {
+      font-size: 18px;  
+    }
+  }
+}
+
+// estilos responsive de proyectos
+@media screen and (max-width: 767px) {
+  .section-proyectos{
+    display: flex;
+    justify-content: center;
+    .contenedor-proyectos{ 
+      max-width: 90%;
+      .row {
+        flex-direction: column; 
+        .card {
+          width: 80%;  
+          margin: 0 auto;  
+          margin-bottom: 20px;  
+        }
+      
+        .card-body ul li {
+          font-size: 14px;  
+        }
+      
+        .card-header h4 {
+          font-size: 18px;  
+        }
+      }
+    } 
+      }
+  }
+
+  
+ 
+
+  @media screen and (max-width: 991px) {
+    .section-proyectos{
+      .contenedor-proyectos{
+        .pro {
+          flex-wrap: wrap;  
+        }
+      
+        .col-sm-4 {
+          width: 100%; 
+          margin-bottom: 20px;  
+        }
+      
+        @supports (display: grid) {
+          .pro {
+            display: grid; 
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+            gap: 20px;  
+          }
+        }
+      }
+    }}
+   
+  
+  
+  
