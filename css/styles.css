@@ -61,6 +61,9 @@ footer {
       color: #00FF7F; }
 
 @media screen and (max-width: 767px) {
+  .contenedor-perfil {
+    max-width: 90%; } }
+@media screen and (max-width: 767px) {
   .datos-personales .card,
   .estudios .card,
   .conocimientos .card,

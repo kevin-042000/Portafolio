@@ -91,8 +91,21 @@ footer {
         }
     }
 }
+ 
+
+
 
 // estilos responsive
+
+// contenedor principal del perfil
+
+@media screen and (max-width: 767px) {
+  .contenedor-perfil {
+    max-width: 90%;
+  }
+}
+
+// cards
 
 .datos-personales,
 .estudios,
@@ -100,8 +113,8 @@ footer {
 .habilidades,
 .experiencia {
 
-
   @media screen and (max-width: 767px) {
+
     .card {
       width: 80%;  
       margin: 0 auto;  
